@@ -5,7 +5,8 @@ using namespace std;
 
 // OpenGL includes
 #ifdef __APPLE__
-#include <OpenGL/gl.h>
+//#include <OpenGL/gl.h>
+#include <GL/gl.h>
 #else
 #include <GL/gl.h>
 #endif

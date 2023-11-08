@@ -13,11 +13,30 @@ ENDIF()
 FIND_PACKAGE( OpenCV 4.0.0 REQUIRED )
 MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 
+#-------------------
+#find_package(GLUT REQUIRED)
+
+# Intel Mac
+#set(GLUT_LIBRARY_DIRS /usr/local/lib)
+#set(GLUT_INCLUDE_DIRS /usr/local/include)
+
+# M1 Mac
+set(GLUT_LIBRARY_DIRS /opt/homebrew/lib)
+set(GLUT_INCLUDE_DIRS /opt/homebrew/include)
+
+set(GLUT_LIBRARIES libglut.3.dylib)
+
+INCLUDE_DIRECTORIES ( ${OPENGL_INCLUDE_DIRS} ${GLUT_INCLUDE_DIRS} )
+ADD_COMPILE_OPTIONS ( "-g" )
+LINK_LIBRARIES( ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} )
+LINK_DIRECTORIES ( ${OPENGL_LIBRARY_DIRS} ${GLUT_LIBRARY_DIRS} )
+#------------------
+
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
-ADD_EXECUTABLE( ${PROJECT_NAME} main.cpp )
-TARGET_LINK_LIBRARIES( ${PROJECT_NAME} ${OpenCV_LIBS} )
+ADD_EXECUTABLE( ch3_sample1New sample1New.cpp)
+TARGET_LINK_LIBRARIES(  ch3_sample1New ${OpenCV_LIBS} )
 
 ADD_EXECUTABLE( ch3_sample1 sample1.cpp )
 TARGET_LINK_LIBRARIES( ch3_sample1 ${OpenCV_LIBS} )

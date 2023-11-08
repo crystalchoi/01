@@ -17,7 +17,9 @@ int main( int argc, const char** argv )
 	Mat photo= imread("../photo.jpg");
 	
 	// Create windows
-	namedWindow("Lena", WINDOW_NORMAL);
+//	namedWindow("Lena", WINDOW_NORMAL);
+    namedWindow("Lena", CV_GUI_NORMAL);
+//    namedWindow("Lena", WINDOW_GUI_EXPANDED);
     //Checking if Lena image has been loaded
 
 	if (!lena.data) {
@@ -30,7 +32,7 @@ int main( int argc, const char** argv )
 	 	return -1;
 	}
 	// Move window
-	moveWindow("Lena", 10, 10);
+	moveWindow("Lena", 100, 100);
 	moveWindow("Photo", 520, 10);
 	
 	// show images
@@ -38,7 +40,7 @@ int main( int argc, const char** argv )
 	imshow("Photo", photo); 
 
 	// Resize window, only non autosize
-	resizeWindow("Lena", 512, 512); 
+	resizeWindow("Lena", 512, 512); // 안하면, 원본 크기로 보임.
 
 	// wait for any key press
 	waitKey(0);
