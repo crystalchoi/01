@@ -40,7 +40,7 @@ int main( int argc, const char** argv )
 	if(videoFile != "")
 		cap.open(videoFile);
 	else
-		cap.open("Recording3.webm");
+		cap.open("/Users/crystal/Downloads/mediaSamples/earth.webm");
     if(!cap.isOpened())  // check if we succeeded
         return -1;
 
