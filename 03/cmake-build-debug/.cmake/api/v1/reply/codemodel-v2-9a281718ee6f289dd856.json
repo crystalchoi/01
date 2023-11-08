@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Photo_Tool",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Photo_Tool::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Photo_Tool-Debug-f3649492856808f0589d.json",
+					"name" : "Photo_Tool",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample1-Debug-11fab40a05ac3f15be93.json",
+					"name" : "ch3_sample1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample2-Debug-7f1f38818a22d26005ba.json",
+					"name" : "ch3_sample2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample3-Debug-71c7f70139a7f15d398a.json",
+					"name" : "ch3_sample3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample4-Debug-7df93bf0299cf0a422b8.json",
+					"name" : "ch3_sample4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample5-Debug-3888e6e367a82d8980d1.json",
+					"name" : "ch3_sample5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ch3_sample6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3_sample6-Debug-eaad5cccc071a57b5787.json",
+					"name" : "ch3_sample6",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/selfdev/ml/cv/01BuildCV/03/cmake-build-debug",
+		"source" : "/Users/selfdev/ml/cv/01BuildCV/03"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
