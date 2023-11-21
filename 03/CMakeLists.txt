@@ -13,6 +13,20 @@ ENDIF()
 FIND_PACKAGE( OpenCV 4.0.0 REQUIRED )
 MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 
+
+
+#find_package(GLUT REQUIRED)
+
+set(GLUT_LIBRARY_DIRS /usr/local/lib)
+set(GLUT_INCLUDE_DIRS /usr/local/include)
+set(GLUT_LIBRARIES libglut.3.dylib)
+
+INCLUDE_DIRECTORIES ( ${OPENGL_INCLUDE_DIRS} ${GLUT_INCLUDE_DIRS} )
+ADD_COMPILE_OPTIONS ( "-g" )
+LINK_LIBRARIES( ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} )
+LINK_DIRECTORIES ( ${OPENGL_LIBRARY_DIRS} ${GLUT_LIBRARY_DIRS} )
+#------------------
+
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
